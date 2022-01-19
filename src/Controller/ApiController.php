@@ -19,4 +19,12 @@ class ApiController extends AbstractController
     {
         return $this->json(['success' => true, 'result' => true, 'msg' => '']);
     }
+
+    /**
+     * @Route("/test2", name="test2", methods={"GET", "POST"})
+     */
+    public function test2(Request $request): Response
+    {
+        return $this->json(['success' => true, 'result' => true, 'msg' => '']);
+    }
 }
